@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Site do Galbi</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/cabecalho.css">
+        <link rel="stylesheet" href="css/corpo.css">
+    </head>
+    <body class="corpo">
+        <header class="cabecalho">
+            <h1 class="cabecalho__logo"></h1>
+        </header>
+
+        <main class="principal">
+            <section class="gabarito secao">
+                <h2 class="gabarito__titulo">Gabarito</h2>
+                <form class="gabarito formulario">
+                    <div class="gabarito--questao formulario--questao">
+                        <label for="questao1" class="questao__texto">Questão 01:</label>
+                        <button class="gabarito__formulario--campo formulario--campo botao-gabarito" id="questao1" name="questao1"></button>
+                    </div>
+                    <div class="gabarito--questao formulario--questao">
+                        <label for="questao2" class="questao__texto">Questão 02:</label>
+                        <button class="gabarito__formulario--campo formulario--campo botao-gabarito" id="questao2" name="questao2"></button>
+                    </div>
+                    <div class="gabarito--questao formulario--questao">
+                        <label for="questao3" class="questao__texto">Questão 03:</label>
+                        <button class="gabarito__formulario--campo formulario--campo botao-gabarito" id="questao3" name="questao3"></button>
+                    </div>
+                    <div class="gabarito--questao formulario--questao">
+                        <label for="questao4" class="questao__texto">Questão 04:</label>
+                        <button class="gabarito__formulario--campo formulario--campo botao-gabarito" id="questao4" name="questao4"></button>
+                    </div>
+                    <div class="gabarito--questao formulario--questao">
+                        <label for="questao5" class="questao__texto">Questão 05:</label>
+                        <button class="gabarito__formulario--campo formulario--campo botao-gabarito" id="questao5" name="questao5"></button>
+                    </div>
+                    <div class="gabarito--questao formulario--questao">
+                        <label for="questao6" class="questao__texto">Questão 06:</label>
+                        <button class="gabarito__formulario--campo formulario--campo botao-gabarito" id="questao6" name="questao6"></button>
+                    </div>
+                    <div class="gabarito--questao formulario--questao">
+                        <label for="questao7" class="questao__texto">Questão 07:</label>
+                        <button class="gabarito__formulario--campo formulario--campo botao-gabarito" id="questao7" name="questao7"></button>
+                    </div>
+                    <div class="gabarito--questao formulario--questao">
+                        <label for="questao8" class="questao__texto">Questão 08:</label>
+                        <button class="gabarito__formulario--campo formulario--campo botao-gabarito" id="questao8" name="questao8"></button>
+                    </div>
+                    <div class="gabarito--questao formulario--questao">
+                        <label for="questao9" class="questao__texto">Questão 09:</label>
+                        <button class="gabarito__formulario--campo formulario--campo botao-gabarito" id="questao9" name="questao9"></button>
+                    </div>
+                    <div class="gabarito--questao formulario--questao">
+                        <label for="questao10" class="questao__texto questao10">Questão 10:</label>
+                        <button class="gabarito__formulario--campo formulario--campo botao-gabarito" id="questao10" name="questao10"></button>
+                    </div>
+                </form>
+
+                <button type="submit" onclick="return enviarGabarito()" class="respostas__botao" id="botao-correcao">Inserir</button>
+            </section>
+
+            <section class="correcao secao">
+                <h2 class="correcao__titulo">Nota:</h2>
+
+                <p class="correcao__nota" id="valor-nota">0</p>
+            </section>
+
+            <section class="respostas secao">
+                <h2 class="respostas__titulo">Aluno</h2>
+                <form class="respostas formulario" id="formulario-aluno">
+                    <div class="respostas--questao formulario--questao">
+                        <label for="questao1" class="questao__texto">Questão 01:</label>
+                        <input type="text" class="respostas__formulario--campo formulario--campo input-aluno" id="questao1" name="questao1" placeholder="Q01" required>
+                    </div>
+                    <div class="respostas--questao formulario--questao">
+                        <label for="questao2" class="questao__texto">Questão 02:</label>
+                        <input type="text" class="respostas__formulario--campo formulario--campo input-aluno" id="questao2" name="questao2" placeholder="Q02" required>
+                    </div>
+                    <div class="respostas--questao formulario--questao">
+                        <label for="questao3" class="questao__texto">Questão 03:</label>
+                        <input type="text" class="respostas__formulario--campo formulario--campo input-aluno" id="questao3" name="questao3" placeholder="Q03" required>
+                    </div>
+                    <div class="respostas--questao formulario--questao">
+                        <label for="questao4" class="questao__texto">Questão 04:</label>
+                        <input type="text" class="respostas__formulario--campo formulario--campo input-aluno" id="questao4" name="questao4" placeholder="Q04" required>
+                    </div>
+                    <div class="respostas--questao formulario--questao">
+                        <label for="questao5" class="questao__texto">Questão 05:</label>
+                        <input type="text" class="respostas__formulario--campo formulario--campo input-aluno" id="questao5" name="questao5" placeholder="Q05" required>
+                    </div>
+                    <div class="respostas--questao formulario--questao">
+                        <label for="questao6" class="questao__texto">Questão 06:</label>
+                        <input type="text" class="respostas__formulario--campo formulario--campo input-aluno" id="questao6" name="questao6" placeholder="Q06" required>
+                    </div>
+                    <div class="respostas--questao formulario--questao">
+                        <label for="questao7" class="questao__texto">Questão 07:</label>
+                        <input type="text" class="respostas__formulario--campo formulario--campo input-aluno" id="questao7" name="questao7" placeholder="Q07" required>
+                    </div>
+                    <div class="respostas--questao formulario--questao">
+                        <label for="questao8" class="questao__texto">Questão 08:</label>
+                        <input type="text" class="respostas__formulario--campo formulario--campo input-aluno" id="questao8" name="questao8" placeholder="Q08" required>
+                    </div>
+                    <div class="respostas--questao formulario--questao">
+                        <label for="questao9" class="questao__texto">Questão 09:</label>
+                        <input type="text" class="respostas__formulario--campo formulario--campo input-aluno" id="questao9" name="questao9" placeholder="Q09" required>
+                    </div>
+                    <div class="respostas--questao formulario--questao">
+                        <label for="questao10" class="questao__texto questao10">Questão 10:</label>
+                        <input type="text" class="respostas__formulario--campo formulario--campo input-aluno" id="questao10" name="questao10" placeholder="Q10" required>
+                    </div>
+                </form>
+
+                <div class="formulario__botao">
+                    <button type="submit" onclick="return aoEnviar()" class="respostas__botao" id="botao-correcao">Corrigir</button>
+                    <button type="submit" onclick="return zerar()" class="respostas__botao" id="botao-correcao">Zerar</button>
+                </div>
+            </section>
+        </main>
+        
+        <script src="./js/index.js"></script>
+    </body>
+</html>
