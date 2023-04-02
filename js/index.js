@@ -27,6 +27,8 @@ function enviarGabarito(){
 
 function zerar(){
     notaTotal = 0;
+
+    nota.innerHTML = notaTotal;
     
     for(i = 0; i < 10; i++){
         input[i].value = null;
